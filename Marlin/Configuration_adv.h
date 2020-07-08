@@ -36,7 +36,7 @@
 // @section temperature
 
 //===========================================================================
-//=============================Thermal Settings  ============================
+//============================= Thermal Settings ============================
 //===========================================================================
 
 //
@@ -1696,10 +1696,19 @@
 
 // @section hidden
 
+<<<<<<< HEAD
 // The number of linear motions that can be in the plan at any give time.
 // THE BLOCK_BUFFER_SIZE NEEDS TO BE A POWER OF 2 (e.g. 8, 16, 32) because shifts and ors are used to do the ring-buffering.
 #if ENABLED(SDSUPPORT)
   #define BLOCK_BUFFER_SIZE 16 // SD,LCD,Buttons take more memory, block buffer needs to be smaller
+=======
+// The number of linear moves that can be in the planner at once.
+// The value of BLOCK_BUFFER_SIZE must be a power of 2 (e.g. 8, 16, 32)
+#if BOTH(SDSUPPORT, DIRECT_STEPPING)
+  #define BLOCK_BUFFER_SIZE  8
+#elif ENABLED(SDSUPPORT)
+  #define BLOCK_BUFFER_SIZE 16
+>>>>>>> bugfix-2.0.x
 #else
   #define BLOCK_BUFFER_SIZE 16 // maximize block buffer
 #endif
