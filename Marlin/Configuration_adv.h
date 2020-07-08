@@ -630,6 +630,7 @@
 
 #define HOMING_BUMP_MM      { 5, 5, 2 }       // (mm) Backoff from endstops after first bump
 #define HOMING_BUMP_DIVISOR { 2, 2, 4 }       // Re-Bump Speed Divisor (Divides the Homing Feedrate)
+<<<<<<< HEAD
 
 //#define HOMING_BACKOFF_POST_MM { 2, 2, 2 }  // (mm) Backoff from endstops after homing
 
@@ -637,6 +638,15 @@
 //#define HOME_Y_BEFORE_X                     // If G28 contains XY home Y before X
 //#define CODEPENDENT_XY_HOMING               // If X/Y can't home without homing Y/X first
 
+=======
+
+//#define HOMING_BACKOFF_POST_MM { 2, 2, 2 }  // (mm) Backoff from endstops after homing
+
+//#define QUICK_HOME                          // If G28 contains XY do a diagonal move first
+//#define HOME_Y_BEFORE_X                     // If G28 contains XY home Y before X
+//#define CODEPENDENT_XY_HOMING               // If X/Y can't home without homing Y/X first
+
+>>>>>>> parent of ea3dbe0be... Current
 // @section bltouch
 
 #if ENABLED(BLTOUCH)
@@ -1111,9 +1121,15 @@
   // The standard SD detect circuit reads LOW when media is inserted and HIGH when empty.
   // Enable this option and set to HIGH if your SD cards are incorrectly detected.
   //#define SD_DETECT_STATE HIGH
+<<<<<<< HEAD
 
   //#define SDCARD_READONLY                 // Read-only SD card (to save over 2K of flash)
 
+=======
+
+  //#define SDCARD_READONLY                 // Read-only SD card (to save over 2K of flash)
+
+>>>>>>> parent of ea3dbe0be... Current
   #define SD_PROCEDURE_DEPTH 1              // Increase if you need more nested M32 calls
 
   #define SD_FINISHED_STEPPERRELEASE true   // Disable steppers when SD Print is finished
@@ -1831,6 +1847,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 // The number of linear motions that can be in the plan at any give time.
 // THE BLOCK_BUFFER_SIZE NEEDS TO BE A POWER OF 2 (e.g. 8, 16, 32) because shifts and ors are used to do the ring-buffering.
 #if ENABLED(SDSUPPORT)
@@ -1840,13 +1857,19 @@
 =======
 // The number of lineear moves that can be in the planner at once.
 >>>>>>> parent of ea3dbe0be... Current
+=======
+// The number of lineear moves that can be in the planner at once.
+>>>>>>> parent of ea3dbe0be... Current
 // The value of BLOCK_BUFFER_SIZE must be a power of 2 (e.g. 8, 16, 32)
 #if BOTH(SDSUPPORT, DIRECT_STEPPING)
   #define BLOCK_BUFFER_SIZE  8
 #elif ENABLED(SDSUPPORT)
   #define BLOCK_BUFFER_SIZE 16
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> bugfix-2.0.x
+=======
+>>>>>>> parent of ea3dbe0be... Current
 =======
 >>>>>>> parent of ea3dbe0be... Current
 #else
