@@ -631,6 +631,7 @@
 #define HOMING_BUMP_MM      { 5, 5, 2 }       // (mm) Backoff from endstops after first bump
 #define HOMING_BUMP_DIVISOR { 2, 2, 4 }       // Re-Bump Speed Divisor (Divides the Homing Feedrate)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 //#define HOMING_BACKOFF_POST_MM { 2, 2, 2 }  // (mm) Backoff from endstops after homing
 
@@ -638,6 +639,15 @@
 //#define HOME_Y_BEFORE_X                     // If G28 contains XY home Y before X
 //#define CODEPENDENT_XY_HOMING               // If X/Y can't home without homing Y/X first
 
+=======
+
+//#define HOMING_BACKOFF_POST_MM { 2, 2, 2 }  // (mm) Backoff from endstops after homing
+
+//#define QUICK_HOME                          // If G28 contains XY do a diagonal move first
+//#define HOME_Y_BEFORE_X                     // If G28 contains XY home Y before X
+//#define CODEPENDENT_XY_HOMING               // If X/Y can't home without homing Y/X first
+
+>>>>>>> parent of ea3dbe0be... Current
 =======
 
 //#define HOMING_BACKOFF_POST_MM { 2, 2, 2 }  // (mm) Backoff from endstops after homing
@@ -1122,9 +1132,15 @@
   // Enable this option and set to HIGH if your SD cards are incorrectly detected.
   //#define SD_DETECT_STATE HIGH
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   //#define SDCARD_READONLY                 // Read-only SD card (to save over 2K of flash)
 
+=======
+
+  //#define SDCARD_READONLY                 // Read-only SD card (to save over 2K of flash)
+
+>>>>>>> parent of ea3dbe0be... Current
 =======
 
   //#define SDCARD_READONLY                 // Read-only SD card (to save over 2K of flash)
@@ -1848,12 +1864,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 // The number of linear motions that can be in the plan at any give time.
 // THE BLOCK_BUFFER_SIZE NEEDS TO BE A POWER OF 2 (e.g. 8, 16, 32) because shifts and ors are used to do the ring-buffering.
 #if ENABLED(SDSUPPORT)
   #define BLOCK_BUFFER_SIZE 16 // SD,LCD,Buttons take more memory, block buffer needs to be smaller
 =======
 // The number of linear moves that can be in the planner at once.
+=======
+// The number of lineear moves that can be in the planner at once.
+>>>>>>> parent of ea3dbe0be... Current
 =======
 // The number of lineear moves that can be in the planner at once.
 >>>>>>> parent of ea3dbe0be... Current
@@ -1867,7 +1887,10 @@
   #define BLOCK_BUFFER_SIZE 16
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> bugfix-2.0.x
+=======
+>>>>>>> parent of ea3dbe0be... Current
 =======
 >>>>>>> parent of ea3dbe0be... Current
 =======
